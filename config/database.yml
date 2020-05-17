@@ -17,14 +17,14 @@ default: &default
 
 development:
   <<: *default
-  database: kidscal_api_development
+  database: jq_api_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: kidscal_api_test
+  database: jq_api_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -47,6 +47,6 @@ test:
 #
 production:
   <<: *default
-  database: kidscal_api_production
-  username: <%= ENV['KIDSCAL_API_DATABASE_USERNAME'] %>
-  password: <%= ENV['KIDSCAL_API_DATABASE_PASSWORD'] %>
+  database: jq_api_production
+  username: <%= ENV['JQ_API_DATABASE_USERNAME'] %>
+  password: <%= ENV['JQ_API_DATABASE_PASSWORD'] %>
